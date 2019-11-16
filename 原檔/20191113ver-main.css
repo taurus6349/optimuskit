@@ -65,6 +65,13 @@
 		box-sizing: border-box;
 	}
 
+/*#header .inner a {
+	padding: 20px;
+}*/
+
+	#header .inner nav{
+		padding: 50px;
+	}
 
 /*中英文版切換button*/
 	#change button{
@@ -77,28 +84,15 @@
 		float: right;
 	}
 
-	.headerbanner{
-		color: #000 /*!important*/;
-		line-height: normal;
-		width: 150px;
-	}
-
 
 /* [自己，更動]DropDownMenu*/
-
-	.dropdownmenu {
-		background: #191970;
-		display: inline-block;
-		width: 100%;
-	}
-
 	.dropdownmenu ul, .dropdownmenu li {
 		margin: 0;
 		padding: 0;
 	}
 
 	.dropdownmenu ul {
-		/*background: gray;*//*前面dropdownmenu已經寫了*/
+		background: gray;
 		list-style: none;
 		width: 100%;
 	}
@@ -107,24 +101,7 @@
 		float: left;
 		position: relative;
 		width: 10%;
-		font-weight: 600;
-		display: inline-block;
-	}
 
-	.dropdownmenu li > a, a:visited {
-		padding:15px;
-		color: #fff;
-		text-decoration: none;
-		transition: all .3s ease-in-out;
-		-moz-transition:all .3s ease-in-out;
-		-webkit-transition:all .3s ease-in-out;
-	}
-
-	.dropdownmenu li > a:hover {
-		background: rgba(0,0,0,0.1);
-		transition: all .3s ease-in-out;
-		-moz-transition:all .3s ease-in-out;
-		-webkit-transition:all .3s ease-in-out;
 	}
 
 	.dropdownmenu a {
@@ -145,10 +122,6 @@
 
 	.dropdownmenu li:hover a {
 		background: transparent; /*自己改，原#000000，改透明*/;
-		background: rgba(0,0,0,0.1);
-		transition: all .3s ease-in-out;
-		-moz-transition:all .3s ease-in-out;
-		-webkit-transition:all .3s ease-in-out;
 	
 	}
 
@@ -170,22 +143,23 @@
 	#submenu li {
 		float: none;
 		width: 100%;
-		/*background-color: #DF4B05;*/
-		/*background: #DF4B05;*/ 
-		background: rgba(223, 75, 5,0.8);
-		padding-top: 20px;
-
-		
 	}
 
 	#submenu a:hover {
-		background: rgba(0,0,0,0.1);
+		background: #DF4B05;
 	}
 
 	#submenu a {
 		background-color: transparent/*自己改，原#000000改透明*/;
 	}
 
+/*[自己，更動]navbar 置中*/
+
+.navbar-center {
+	display: inline-block;
+	float: none;
+	vertical-align: top;
+}
 
 /* Containers */
 
@@ -367,57 +341,17 @@
 			color:white;
 		}
 
-		#itemlist{
-			max-width: 75em;
-			height: 1800px;
-			margin: 0 auto;
-			text-align: center;
-			padding-top: 40px;
-		}
-
-		.navfont a{
-			color: gray;
-		}
-
-		.navfont div{
-			text-align: left;
-			padding: 20px;
-		}
-
-
 		.productList{
-			width: 25%;
-			/*height: 25%;*/
-			margin: 0px 0;
+			width: 960px;
+			height: 900px;
+			margin: 120px auto;
 			z-index: 1;
-			float: left;
-			text-align: center;
 		}
 
 		.productList img{
-			width: 300px;
-			/*margin-top: 30px;*/
-			/*margin-left:30px;*/
-
-		}
-
-		.productList2{
-			width: 250px;
-			height: 250px;
-			/*height: 25%;*/
-			margin: 0px 0;
-			border-style: solid;
-			border-width: 2px;
-			z-index: 1;
-			float: left;
-			text-align: center;
-			padding: 10px;
-		}
-
-		.productList2 img{
-			width: 230px;
-			/*margin-top: 30px;*/
-			/*margin-left:30px;*/
+			width: 60%;
+			margin-top: 30px;
+			margin-left:30px;
 
 		}
 
@@ -458,8 +392,6 @@
 
 
 /*商品格子*/
-
-	
 
 	.table_content {
 		border: 1px solid #000;
@@ -2215,26 +2147,17 @@
 
 /* Form */
 
-	#footer form{
-		position: relative;
-		bottom: 0px;
-
-		padding: 0 20px;
-	}
-
 	form {
 		margin: 0 0 2em 0;
 	}
 
 		form .field {
-			margin-bottom: 0.5em;
-			float: left;
+			margin-bottom: 1.5em;
 		}
 
 			form .field.half {
 				display: inline-block;
 				width: 48%;
-				float: left;
 			}
 
 				form .field.half.first {
@@ -2254,14 +2177,12 @@
 
 		}
 
-
 	label {
 		color: #555;
-		display: inline-block;
+		display: block;
 		font-size: 0.9em;
 		font-weight: 600;
 		margin: 0 0 1em 0;
-		padding: 10px;
 	}
 
 	input[type="text"],
@@ -2274,16 +2195,16 @@
 		-webkit-appearance: none;
 		-ms-appearance: none;
 		appearance: none;
-		background:rgba(0,0,0,0.2)/* #6cc091*/;
-		border-radius: 30px;
+		background:#fff/* #6cc091*/;
+		border-radius: 10px;
 		border: none;
-		border: solid 2px #fff;
+		border: solid 2px #8dcca9;
 		color: #fff;
 		display: block;
 		outline: 0;
 		padding: 0 1em;
 		text-decoration: none;
-		/*width: 100%;*//*影響我的search bar 的長度，所以我關了*/
+		width: 100%;
 	}
 
 		input[type="text"]:invalid,
@@ -2507,12 +2428,6 @@
 			display: none;
 		}
 
-	#fa_gray{
-		color: gray;
-
-		text-shadow: 1 1 1 #ccc;
-	}
-
 /* Image */
 
 	.image {
@@ -2544,10 +2459,7 @@
 		}
 
 		.image.fullframe img {
-			height: 400px;
-			border-style: solid;
-			border-width: 2px;
-			border-color: #000;
+			height: 550px;
 		}
 
 		.image.left {
@@ -3047,64 +2959,21 @@
 			position: relative;
 		}
 
-		
-
-		#logobox{
-			max-width: 75em;
-			/*font-size: 20;*/
-			margin: 0 auto;
-			
-			
+		/*自己更動，加nav*/
+		#header .nav {
+			height: 50px;
+			color: #fff;
+			position: relative;
+			text-align: center;/*置中了*/
 		}
-
-		#logobox .container1{
-			width: 600px;
-			float: left;
-
-		}
-
-		#logobox .container1 a{
-			color: #000;
-		}
-
-		#logobox .container2{
-			width: 50px;
-			float: left;
-		}
-
-		#logobox .container2 i{
-			top: 20px !important;
-		}
-
-		#logobox .container3{
-			width: 120px;
-			float: left;
-			text-align: center;
-		}
-
-
-		#logobox a {
-			font-size: 20pt !important;
-		}
-
-		#logobox .logoframe{
-			width: 200px;
-			display: inline-block;
-		}
-
-		#logobox .inner{
-			float: left;
-		}
-
-
 
 		#header .logo {
-			color: #000;
+			color: #ffffff;
 			display: inline-block;
 			font-weight: 400;
-			/*height: inherit;*/
+			height: inherit;
 			left: 0;
-			/*line-height: inherit;*/
+			line-height: inherit;
 			margin: 0;
 			padding: 0;
 			position: absolute;
@@ -3113,9 +2982,8 @@
 		}
 
 			#header .logo strong {
-				color: #000;
-				font-weight: 1000;
-				font-size: 20px;
+				color: #ffffff;
+				font-weight: 600;
 			}
 
 		#header a {
@@ -3124,7 +2992,7 @@
 			-ms-transition: color 0.2s ease-in-out;
 			transition: color 0.2s ease-in-out;
 			display: inline-block;
-			padding: 3 3em;
+			padding: 0 0.75em;
 			color: inherit;
 			text-decoration: none;
 			font-size: 1em;
@@ -3196,34 +3064,7 @@
 /* Nav */
 
 	.nav {
-		position: relative;
-		/*display: inline-block;*/
-		width: 20%;
-		margin: 30px auto;
-		text-align: left;
-		padding:15px;
-		/*padding-bottom: 34%;*/
-
-
-	}
-
-
-	.nav-search {
-		position: absolute;
-		/*width: 30px;*/
-		right: 5%;
-		top: 50%;
-		background: rgba(0,0,0,0.1);
-		-webkit-border-radius:6px;
-		-moz-border-radius:6px;
-		border-radius: :6px;
-		border:none;
-		padding: 5px;
-		padding-left: 15px;
-		outline: none;
-		transition: all .3s ease-in-out;
-		-moz-transition: all .3s ease-in-out;
-		-webkit-transition:all .3s ease-in-out;
+		text-align: center;
 	}
 
 	@media screen and (max-width: 980px) {
@@ -3327,11 +3168,10 @@
 /* Banner */
 
 	#banner {
-		padding: 3em 0 9em 0;
-		/*背景圖放在這裡！*/
-		background-image: url(../../images/PIC/bgimage.jpg);
-		background-size: 100%;
-		background-position:0 140px;
+		padding: 8em 0 9em 0;
+		background-image: url(../../images/bg.jpg);/*背景圖放在這裡！*/
+		background-size: cover;
+		background-position: bottom;
 		background-attachment: fixed;
 		background-repeat: no-repeat;
 		text-align: center;
@@ -3340,30 +3180,18 @@
 
 	}
 
-	#banner2{
-		padding: 9em 0 9em 0;
-		background-image: url(../../images/bg2.jpg);
-		background-size: 100%;
-		background-position:0 140px;
-		background-attachment: scroll;
-		background-repeat: no-repeat;
-		text-align: center;
-		position: relative;
-		z-index: 0;
-	}
-
 		#banner:before {
 			content: '';
-			background: rgba(75, 75, 93, 0.5);
+			background: rgba(75, 75, 93, 0.85);
 			position: absolute;
 			width: 100%;
-			height: 83%;
-			top: 140px;
+			height: 100%;
+			top: 0;
 			left: 0;
 		}
 
 		#banner .inner {
-			border-top: px solid rgba(255, 255, 255, 0.2);/*這個是header下的水平線（難搞的）*/
+			border-top: 2px solid rgba(255, 255, 255, 0.2);/*這個是header下的水平線（難搞的）*/
 			position: relative;
 			z-index: 10005;
 			padding-top: 8em;
@@ -3424,25 +3252,6 @@
 				#banner .flex div p {
 					margin: 0;
 				}
-
-		#banner  div{
-			text-align: center ;
-			margin: 0px auto ;
-			/*width: 30%;*/
-		}
-
-		#banner .containerbox{
-			width: 33.3%;
-			/*height: 400px;*/
-			float: left;
-			margin: 0 auto;
-		}
-
-		#banner .containerbox img{
-			width: 400px;
-			height: 400px;
-			padding: 20px;
-		}
 
 		@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
 
@@ -3556,79 +3365,20 @@
 /* Footer */
 
 	#footer {
-		/*padding: 10em 0;*/
+		padding: 6em 0;
 		background:#0f0d4d/*原 #6cc091綠色 改藍色*/;
 		color: #fff;
 		text-align: center;
-		height: 500px;
 	}
 
 		#footer h3 {
 			color: #FFF;
-			margin-bottom: 50px !important;
-			position: absolute;
-			left: 20px;
-			font-size: 5em!important;
+			margin-bottom: 2em !important;
 		}
 
 		#footer label {
-			text-align: right;
-			color: #FFF;
-		}
-
-		#footer img{
-			width: 50%;
-			height: 500px;
-			position: absolute;
-			left:  0;
-		}
-
-		#footer .container2colum{
-			width: 50%;
-			float: left;
-		}
-
-		#footer .container2colum div{
-			width: 60%;
 			text-align: left;
-			padding: 2em;
-		}
-
-		#footer .container2colum h5 {
-			color: red;
-			font-weight: bold;
-			font-size: 2em;
-			font-family: Microsoft JhengHei ;
-
-		}
-
-		#footer .container2colum p {
-			color: #fff;
-			font-size: 1em;
-			font-family: Microsoft JhengHei ;
-			margin: 10px;
-
-		}
-
-		#boxframe{
-			width: 200px;
-			height: 200px;
-			background-color: #fff;
-			padding: 0 !important;
-		}
-
-		#footer .normaltext{
-			color: #fff !important;
-
-		}
-
-		.rightmailbox{
-			float: left;
-			background-color: #0f0d4d;
-			position: absolute;
-			width: 50%;
-			height: 500px;
-			right: 0;
+			color: #FFF;
 		}
 
 		#footer .copyright {
