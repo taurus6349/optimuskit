@@ -375,13 +375,37 @@
 			padding-top: 40px;
 		}
 
+		#itemlist2{
+			max-width: 75em;
+			height: 1800px;
+			margin: 0 auto;
+			text-align: center;
+			padding-top: 40px;
+		}
+
+		#itemlist2 .a70column {
+			width: 80%;
+
+		}
+
+		#itemlist2 .a30column{
+			width: 20%;
+			position: absolute;
+			right: 150px;
+		}
+
+		.navfont {
+			position: absolute;
+			left: 0;
+		}
+
 		.navfont a{
 			color: gray;
 		}
 
 		.navfont div{
 			text-align: left;
-			padding: 20px;
+			padding: 0px;
 		}
 
 
