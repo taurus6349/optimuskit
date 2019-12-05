@@ -23,6 +23,15 @@
 		color: #fff;
 	}
 
+	.biggerfont{
+		font-family: Microsoft JhengHei;
+		font-size: 20px !important;
+	}
+
+	.chi_font{
+		font-family: Microsoft JhengHei;
+	}
+
 	#banner .inner strong{
 		color: #fff;
 	}
@@ -83,6 +92,10 @@
 		width: 150px;
 	}
 
+	#header li{
+		font-family: Microsoft JhengHei;
+	}
+
 
 /* [自己，更動]DropDownMenu*/
 
@@ -90,11 +103,13 @@
 		background: #191970;
 		display: inline-block;
 		width: 100%;
+		margin: 25px;
 	}
 
 	.dropdownmenu ul, .dropdownmenu li {
-		margin: 0;
+		margin: 0 auto;
 		padding: 0;
+		width: 100px;
 	}
 
 	.dropdownmenu ul {
@@ -104,15 +119,17 @@
 	}
 
 	.dropdownmenu li {
-		float: left;
+		/*float: left;*/
 		position: relative;
-		width: 10%;
+		width: 100px;
 		font-weight: 600;
 		display: inline-block;
+		text-align: center;
 	}
 
 	.dropdownmenu li > a, a:visited {
-		padding:15px;
+		/*padding:0px;*/
+		margin: 0 auto;
 		color: #fff;
 		text-decoration: none;
 		transition: all .3s ease-in-out;
@@ -125,14 +142,19 @@
 		transition: all .3s ease-in-out;
 		-moz-transition:all .3s ease-in-out;
 		-webkit-transition:all .3s ease-in-out;
+		width: 100px;
+		/*text-align: center;*//*樓下的a：hover已經寫了，就沒有必要再寫*/
+		/*line-height: 52px；*/
+		/*margin:auto;*/
+		/*height: 52px;高度是來自ul的52px*/
 	}
 
 	.dropdownmenu a {
 		background: transparent/*原#30A6E6 改透明*/;/*menu 的下拉選單顏色*/
 		color: #ffffff;
-		display: block;
-		font: bold 12px/20px sans-serif;
-		padding: 25px 25px;
+		/*display: block;*/
+		font: bold 12px/20px Microsoft JhengHei;
+		/*padding: 25px 25px;*/
 		text-align: center;
 		text-decoration: none;
 		-webkit-transition:all .25s ease;
@@ -149,21 +171,27 @@
 		transition: all .3s ease-in-out;
 		-moz-transition:all .3s ease-in-out;
 		-webkit-transition:all .3s ease-in-out;
+
 	
+	}
+
+	.dropdownmenu a:hover{
+		line-height: 52px;
 	}
 
 	#submenu {
 		left: 0;
 		opacity: 0;
 		position: absolute;
-		top: 35px;
+		top: 0px;
+		padding-top: 60;
 		visibility: hidden;
 		z-index: 1;
 	}
 
 	li:hover ul#submenu {
 		opacity: 1;
-		top: 40px;	/* adjust this as per top nav padding top & bottom comes */
+		/*top: 40px;*/	/* adjust this as per top nav padding top & bottom comes */
 		visibility: visible;
 	}
 
@@ -176,6 +204,43 @@
 		padding-top: 20px;
 
 		
+	}
+
+	.containerbox2{
+	  position: relative;
+	  width: 50%;
+	}
+
+	.containerbox2:hover .overlay {
+	  opacity: 1;
+	}
+
+
+	.overlay{
+	  position: absolute;
+	  top: 11px;
+	  bottom: 0;
+	  left: 11px;
+	  right: 0;
+	  height: 270px;
+	  width: 270px;
+	  opacity: 0;
+	  transition: .5s ease;
+	  background-color: #003eba;
+	
+	}
+
+	.text{
+		color: white;
+	  font-size: 50px;
+	  font-family: Microsoft JhengHei;
+	  position: absolute;	
+	  top: 50%;
+	  left: 50%;
+	  -webkit-transform: translate(-50%, -50%);
+	  -ms-transform: translate(-50%, -50%);
+	  transform: translate(-50%, -50%);
+	  text-align: center;
 	}
 
 	#submenu a:hover {
@@ -2251,14 +2316,14 @@
 	}
 
 		form .field {
-			margin-bottom: 0.5em;
+			margin-bottom: 20px;
 			float: left;
 		}
 
 			form .field.half {
-				display: inline-block;
-				width: 48%;
-				float: left;
+				display: block;
+				width: 50%;
+				/*float: left;*/
 			}
 
 				form .field.half.first {
@@ -2299,10 +2364,11 @@
 		-ms-appearance: none;
 		appearance: none;
 		background:rgba(0,0,0,0.2)/* #6cc091*/;
-		border-radius: 30px;
+		border-radius: 10px;
 		border: none;
-		border: solid 2px #fff;
+		/*border: solid 2px #fff;*/
 		color: #fff;
+		background-color: white;
 		display: block;
 		outline: 0;
 		padding: 0 1em;
@@ -2310,6 +2376,11 @@
 		/*width: 100%;*//*影響我的search bar 的長度，所以我關了*/
 	}
 
+/*	::-webkit-input-placeholder { color: red; }
+	input::-moz-placeholder { color: red; }
+	input::-moz-placeholder{color:red;}
+	-ms-input-placeholder{color: red;}
+*/
 		input[type="text"]:invalid,
 		input[type="password"]:invalid,
 		input[type="email"]:invalid,
@@ -2569,8 +2640,8 @@
 
 		.image.fullframe img {
 			height: 400px;
-			border-style: solid;
-			border-width: 2px;
+			/*border-style: solid;*/
+			/*border-width: 2px;*/
 			border-color: #000;
 		}
 
@@ -2798,6 +2869,12 @@
 		overflow-x: auto;
 	}
 
+	.lowerfooter{
+		position: relative;
+		top: 180px;
+		width: 600px;
+	}
+
 	table {
 		margin: 0 0 2em 0;
 		width: 100%;
@@ -2875,8 +2952,8 @@
 		-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		background-color: transparent;
-		box-shadow: inset 0 0 0 3px #0f0d4d/*#6cc091*/;
-		color: #0f0d4d/*#6cc091*/ !important;
+		box-shadow: inset 0 0 0 0px transparent/*#6cc091*/;
+		color: transparent/*#6cc091*/ !important;
 		border-radius: 30px;
 		border: 0;
 		cursor: pointer;
@@ -2898,7 +2975,7 @@
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			background-color: rgba(108, 192, 145, 0.15);
+			background-color: rgba(108, 192, 145, 0);
 		}
 
 		input[type="submit"]:active,
@@ -2906,7 +2983,7 @@
 		input[type="button"]:active,
 		button:active,
 		.button:active {
-			background-color: rgba(108, 192, 145, 0.15);
+			background-color: rgba(108, 192, 145, 0);
 		}
 
 		input[type="submit"].icon,
@@ -3019,11 +3096,11 @@
 		button:disabled,
 		.button.disabled,
 		.button:disabled {
-			background-color: #9a9a9a !important;
-			box-shadow: inset 0 -0.15em 0 0 rgba(0, 0, 0, 0.15);
-			color: #fff !important;
+			background-color: transparent !important;
+			box-shadow: inset 0 -0.15em 0 0 rgba(0, 0, 0, 0);
+			color: transparent !important;
 			cursor: default;
-			opacity: 0.25;
+			opacity: 0;
 		}
 
 		@media screen and (max-width: 480px) {
@@ -3035,6 +3112,7 @@
 			.button {
 				padding: 0;
 				width: 100%;
+				color: transparent;
 			}
 
 		}
@@ -3084,6 +3162,11 @@
 		#logobox .container1{
 			width: 600px;
 			float: left;
+
+		}
+
+		.container1 li{
+			font-family: Microsoft JhengHei ;
 
 		}
 
@@ -3227,8 +3310,11 @@
 		text-align: left;
 		padding:15px;
 		/*padding-bottom: 34%;*/
+	}
 
-
+	.flex-nav{
+		display: flex;
+		justify-content: center;
 	}
 
 
@@ -3351,12 +3437,12 @@
 /* Banner */
 
 	#banner {
-		padding: 3em 0 9em 0;
+		padding: 6em 0 9em 0;
 		/*背景圖放在這裡！*/
 		background-image: url(../../images/PIC/bgimage.jpg);
 		background-size: 100%;
 		background-position:0 140px;
-		background-attachment: fixed;
+		/*background-attachment: fixed;*/
 		background-repeat: no-repeat;
 		text-align: center;
 		position: relative;
@@ -3378,10 +3464,10 @@
 
 		#banner:before {
 			content: '';
-			background: rgba(75, 75, 93, 0.5);
+			background: rgba(75, 75, 93, 0);
 			position: absolute;
 			width: 100%;
-			height: 83%;
+			height: 60%;
 			top: 140px;
 			left: 0;
 		}
@@ -3465,7 +3551,8 @@
 		#banner .containerbox img{
 			width: 400px;
 			height: 400px;
-			padding: 20px;
+			padding: 20px ;
+			margin: 285px 0 0 0 ;
 		}
 
 		@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
@@ -3655,10 +3742,21 @@
 			right: 0;
 		}
 
+		#footer h4{
+		color: white!important;
+		font-family: Microsoft JhengHei;
+		position: absolute;
+		left:20px;
+		padding: 110px 0 20px 0 ;
+
+		}
+
 		#footer .copyright {
 			color: rgba(255, 255, 255, 0.5);
 			font-size: 0.8em;
 			margin: 0 0 2em 0;
+			position: relative;
+			top: 100px;
 			padding: 0;
 		}
 
