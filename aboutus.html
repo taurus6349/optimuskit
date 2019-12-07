@@ -13,6 +13,8 @@
 	<link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all">
 	<link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-font-face.min.css" media="all">
 	<link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-shims.min.css" media="all">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"><link rel="stylesheet" href="./style.css"> -->
 	
 
 </head>
@@ -48,7 +50,7 @@
 			</div>
 		</section>
 		<section>
-			<nav>
+			<nav id="pages-nav">
 				<ul class="dropdown">
 					<li class="dropbtn"><a href="index.html">首頁</a></li>
 					<li class="dropbtn-2"><a href="index.html">類別</a>
@@ -79,7 +81,7 @@
 								<li><a href="#">影像處理器</a></li>
 							</ul>
 					</li>
-					<li class="dropbtn-4"><a href="generic.html">聯絡我們</a>
+					<li class="dropbtn-4"><a href="aboutus.html">聯絡我們</a>
 						<ul class="dropdown-content-4">
 								<li><a href="#">電源供應</a></li>
 								<li><a href="#">記憶卡</a></li>
@@ -96,210 +98,98 @@
 		</section>
 	</header>
 
-<!-- Banner -->
-	<section id="banner">
-		<main>
-			<div class="banner-pic">
-				<img src="images/PIC/bgimage.jpg" alt="banner背景圖">
-			</div>
-			<div class="flex-3col">
-				<div><img src="images/1x/資產 32.png" alt="資產32.png 快速交貨"></div>
-				<div><img src="images/1x/資產 33.png" alt="資產32.png 用戶安全"></div>		
-				<div><img src="images/1x/資產 34.png" alt="資產32.png 品質保證"></div>
-			</div>
-		</main>
-	</section>
-
-
-<!-- 關於我們 -->
-	<section id="about-us">
-		<div>
-			<div class="flex-2col">
-				<article >
-					<div class="pic-frame-fullframe"><!-- 改過，加了framesize -->
-						<img src="images/about-us.png" alt="about_us 關於我們" />
-					</div>
-					
-					<!-- <p> 專業維修及快速現場服務<br />品牌種類眾多<br />服務廠商達300餘家<br />多達萬種設備及控制器</p> -->
-				</article>
-				<article >
-					<div class="pic-frame-100vw">
-						<img src="images/PIC/aboutus.gif" alt="aboutus.gif" />
-					</div>
-					
-				</article>
-			</div>
-		</div>
-	</section>
-
-	<!-- 品牌合作商 -->
-	<section id="showroom"><!-- 這裡要放格子的內容，製造商 -->
-		<div class="grid-container">
-			<div class="item-container">
-				<img src="images/1x/資產 5.png" alt="資產 5.png 製造商">
-			</div>
-			<div class="item-container">
-				<img src="images/1x/資產 6.png" alt="資產 6.png">
-				<div class="overlay">
-					<div class="item-text">
-						ABB
-					</div>
-				</div>
-			</div>
-			<div  class="item-container" >
-				<img src="images/1x/資產 7.png" alt="資產 7.png">
-				<div class="overlay">
-					<div class="item-text">
-						BALLUFF
-					</div>
-				</div>
-			</div>
-			<div class="item-container">
-				<img src="images/1x/資產 8.png" alt="資產 8.png">
-				<div class="overlay">
-					<div class="item-text">
-						BELDEN
-					</div>
-				</div>
-			</div>
-			<div class="item-container">
-				<img src="images/1x/資產 9.png" alt="資產 9.png">
-				<div class="overlay">
-					<div class="item-text">
-						BOCCHIOTTI
-					</div>
-				</div>
-			</div>
-			<div class="item-container">
-				<img src="images/1x/資產 10.png" alt="資產 10.png">
-				<div class="overlay">
-					<div class="item-text">
-						DANFOSS
-					</div>
-				</div>
-			</div>
-			<div class="item-container">
-				<img src="images/1x/資產 11.png" alt="資產 11.png">
-				<div class="overlay">
-					<div class="item-text">
-						CABUR
-					</div>
-				</div>
-			</div>
-			<div class="item-container">
-				<img src="images/1x/資產 12.png" alt="資產 12.png">
-				<div class="overlay">
-					<div class="item-text">
-						CEMBRE
-					</div>
-				</div>
-			</div>
-			<div class="item-container">
-				<img src="images/1x/資產 16.png" alt="資產 16.png">
-				<div class="overlay">
-					<div class="item-text">
-						COGNEX
-					</div>
-				</div>
-			</div>
-			<div class="item-container">
-				<img src="images/1x/資產 17.png" alt="資產 17.png">
-				<div class="overlay">
-					<div class="item-text">
-						DATALOGIC
-					</div>
-				</div>
-			</div>
-			<div class="item-container">
-				<img src="images/1x/資產 18.png" alt="資產 18.png">
-				<div class="overlay">
-					<div class="item-text">
-						DKC
-					</div>
-				</div>
-			</div>
-			<div class="item-container">
-				<img src="images/1x/資產 19.png" alt="資產 19.png">
-				<div class="overlay">
-					<div class="item-text">
-						EATON
-					</div>
-				</div>
-			</div>
-			<div class="item-container">
-				<img src="images/1x/資產 20.png" alt="資產 20.png">
-				<div class="overlay">
-					<div class="item-text">
-						FESTO
-					</div>
-				</div>
-			</div>
-			<div class="item-container">
-				<img src="images/1x/資產 21.png" alt="資產 21.png">
-				<div class="overlay">
-					<div class="item-text">
-						FINDER
-					</div>
-				</div>
-			</div>
-			<div class="item-container">
-				<img src="images/1x/資產 22.png" alt="資產 22.png">
-				<div class="overlay">
-					<div class="item-text">
-						GEFREN
-					</div>
-				</div>
-			</div>
-			<div class="item-container">
-				<img src="images/1x/資產 23.png" alt="資產 23.png">
-				<div class="overlay">
-					<div class="item-text">
-						GEWISS
-					</div>
-				</div>
-			</div>
-			<div class="item-container">
-				<img src="images/1x/資產 24.png" alt="資產 24.png">
-				<div class="overlay">
-					<div class="item-text">
-						GIVI MISURE
-					</div>
-				</div>
-			</div>
-			<div class="item-container">
-				<img src="images/1x/資產 25.png" alt="資產 25.png">
-				<div class="overlay">
-					<div class="item-text">
-						IFM
-					</div>
-				</div>
-			</div>
-			<div class="item-container">
-				<img src="images/1x/資產 26.png" alt="資產 26.png">
-				<div class="overlay">
-					<div class="item-text">
-						ILME
-					</div>
-				</div>
-			</div>
-			<div class="item-container">
-				<img src="images/1x/資產 27.png" alt="資產 27.png">
-				<div class="overlay">
-					<div class="item-text" style="font-size: 45px;">
-						ITALWEBER
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="nav-page">
-			<a href="#top" >1</a>
-			<a href="#top" >2</a>
-			<a href="#top" >3</a>
-			<a href="#top" >4</a>
-			<a href="#top" >5</a>
-		</div>
-	</section>
-
+	<section id="j-section" class="contact-page-sec">
+			    <div class="container">
+			      <div class="row">
+			        <div class="col-md-4">
+			          <div class="contact-info">
+			            <div class="contact-info-item">
+			              <div class="contact-info-icon">
+			                <i class="fas fa-map-marked"></i>
+			              </div>
+			              <div class="contact-info-text">
+			                <h2>地址</h2>
+			                <span>桃園市平鎮區 </span> 
+			                <span>環南路66巷17弄14衖11號</span> 
+			              </div>
+			            </div>            
+			          </div>          
+			        </div>          
+			        <div class="col-md-4">
+			          <div class="contact-info">
+			            <div class="contact-info-item">
+			              <div class="contact-info-icon">
+			                <i class="fas fa-envelope"></i>
+			              </div>
+			              <div class="contact-info-text">
+			                <h2>信箱</h2>
+			                <span>s81871@gmail.com</span> 
+			                <span>Fax:(03)4915856</span>
+			              </div>
+			            </div>            
+			          </div>                
+			        </div>                
+			        <div class="col-md-4">
+			          <div class="contact-info">
+			            <div class="contact-info-item">
+			              <div class="contact-info-icon">
+			                <i class="fas fa-clock"></i>
+			              </div>
+			              <div class="contact-info-text">
+			                <h2>營業時間</h2>
+			                <span>周一 ~ 週五  </span>
+			                <span>9:00 am - 9:00 pm</span>
+			              </div>
+			            </div>            
+			          </div>          
+			        </div>          
+			      </div>
+			      <div class="row">
+			        <div class="col-md-8">
+			          <div class="contact-page-form" method="post">
+			            <h2>線上詢價</h2> 
+			            <form action="contact-mail.php" method="post">
+			              <div class="row">
+			              <div class="col-md-6 col-sm-6 col-xs-12">
+			                <div class="single-input-field">
+			                  <input type="text" placeholder="姓名" name="name"/>
+			                </div>
+			              </div>  
+			              <div class="col-md-6 col-sm-6 col-xs-12">
+			                <div class="single-input-field">
+			                  <input type="email" placeholder="信箱" name="email" required/>
+			                </div>
+			              </div>                              
+			              <div class="col-md-6 col-sm-6 col-xs-12">
+			                <div class="single-input-field">
+			                  <input type="text" placeholder="電話" name="phone"/>
+			                </div>
+			              </div>  
+			              <div class="col-md-6 col-sm-6 col-xs-12">
+			                <div class="single-input-field">
+			                  <input type="text" placeholder="品名" name="subject"/>
+			                </div>
+			              </div>                
+			              <div class="col-md-12 message-input">
+			                <div class="single-input-field">
+			                  <textarea  placeholder="內容" name="message"></textarea>
+			                </div>
+			              </div>                                                
+			              <div class="single-input-fieldsbtn">
+			                <input type="submit" value="確認傳送"/>
+			              </div>                          
+			            </div>
+			            </form>   
+			          </div>      
+			        </div>
+			        <div class="col-md-4">        
+			          <div class="contact-page-map">
+			            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3617.321877599245!2d121.2035566153777!3d24.95516114760054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346823b0a6a86517%3A0x53ca63d596487282!2zMzI05qGD5ZyS5biC5bmz6Y6u5Y2A55Kw5Y2X6LevNjblt7cxN-W8hDE06KGWMTHomZ8!5e0!3m2!1szh-TW!2stw!4v1575513429189!5m2!1szh-TW!2stw" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+			          </div>          
+			        </div>        
+			      </div>
+			    </div>
+			  </section>
 
 <!-- Footer -->
 	<footer>
