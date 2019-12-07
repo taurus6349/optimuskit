@@ -86,7 +86,7 @@ nav{
 	background-color: #191970;
 	width: 80%;
 	height: 50px;
-	z-index: 2;
+	z-index: 1;
 }
 
 nav ul{
@@ -111,6 +111,36 @@ nav a{
 	display: block;
 }
 
+.nav-searchbar{
+	width: 15%;
+	display: flex;
+	justify-content: center;
+	z-index: -1;
+}
+
+.nav-searchbar input{
+	margin: 5px 5px;
+}
+
+.nav-searchbar i{
+	/*margin: 10 10;*/
+	position: absolute;
+	right:    60px;
+	top: 10px;
+	font-size: 20pt;
+	z-index: 1;
+}
+
+.nav-page{
+	/*background-color: blue;*/
+	margin: 0 auto;
+	text-align: center;
+}
+
+.nav-page a {
+	padding: 50px 10px;
+}
+
 .dropbtn{
 	background-color: ;
 }
@@ -120,6 +150,14 @@ nav a{
 }
 
 .dropbtn-2 :hover{
+	background-color: rgb(255 140 0 );
+}
+
+.dropbtn-3 :hover{
+	background-color: rgb(255 140 0 );
+}
+
+.dropbtn-4 :hover{
 	background-color: rgb(255 140 0 );
 }
 
@@ -136,7 +174,38 @@ nav a{
 	display: inline-block;
 }
 
+.dropdown-content-3{
+	position: absolute;
+	width: 10vw;
+	left: 20vw;
+	padding-left: auto;
+	display: inline-block;
+}
+.dropdown-content-4{
+	position: absolute;
+	width: 10vw;
+	left: 30vw;
+	padding-left: auto;
+	display: inline-block;
+}
+
 .dropdown-content li{/*下拉選單外觀*/
+	/*隱藏*/
+	display: none;
+	background-color: orange; 
+	min-width: 10vw;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content-3 li{/*下拉選單外觀*/
+	/*隱藏*/
+	display: none;
+	background-color: orange; 
+	min-width: 10vw;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content-4 li{/*下拉選單外觀*/
 	/*隱藏*/
 	display: none;
 	background-color: orange; 
@@ -150,6 +219,14 @@ nav a{
 }
 
 .dropbtn-2:hover .dropdown-content li{
+	display: block;
+}
+
+.dropbtn-3:hover .dropdown-content-3 li{
+	display: block;
+}
+
+.dropbtn-4:hover .dropdown-content-4 li{
 	display: block;
 }
 
@@ -225,19 +302,28 @@ nav a{
 }
 
 #showroom{
-	background-color: blue;
+	background-color: transparent;
+	/*max-height: 4000px;*/
 	/*width: 80%;*/
 	/*margin: 0 auto;*/
 }
 
 .grid-container{
-	background: green;
+	padding-top: 40px;
+	background: transparent;
 	margin: 0 auto;
 	display: grid;
+	text-align:center;
 	grid-gap: 5px;
-	grid-template-columns: 25% 25% 25% 25%;
-	grid-template-rows: 25% 25% 25% 25%;
+	grid-template-columns:1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 	width: 80%;
+	height: 100%;
+}
+
+.grid-container >div{
+	margin: auto;
+	padding-bottom: 40px;
 }
 
 .item-box{
@@ -254,6 +340,275 @@ nav a{
 	background: #eee;
 }
 
+.item-text{
+	color: white;
+	font-size: 50px;
+	font-family: Microsoft JhengHei;
+	position: absolute;	
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.item-container{
+	position: relative;
+	width: 300px;
+	height: 300px
+	/*margin:auto;
+	padding: auto;*/
+}
+
+.item-container :hover {
+	opacity: 1;
+}
+
+.overlay{
+	position:absolute;
+	top: 10px;
+	bottom: 0;
+	left: 10px;
+	right: 0;
+	height: 245px;
+	width: 245px;
+	opacity: 0;
+	transition: .5s ease;
+	background-color: #003eba;
+	padding: 1rem;
+}
+
+.productList{
+	width: 30%;
+	/*height: 25%;*/
+	margin: 0px 0;
+	z-index: 1;
+	/*float: left;*/
+	/*text-align: center;*/
+}
+
+footer{
+	background-color: transparent;
+	position: static;
+	padding-top: 200px;
+	display: flex;
+	color: white;
+}
+
+footer >div{
+	width: 50%;
+}
+
+footer h2{
+	font-size: 5em;
+}
+
+footer h4{
+	font-size: 1.5em;
+}
+
+
+#contact-us{
+	background-color: #0f0d4d;
+	padding-left: 30px;
+}
+
+.form1{
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 20px;
+	max-width: 400px;
+}
+
+.form2{
+	width: 400px;
+}
+
+.form2 textarea{
+	width:400px;
+}
+
+form{
+	min-width: 350px;
+	max-width: 400px;
+	padding-top: 30px;
+}
+
+.actions{
+	list-style: none;
+	position: absolute;
+}
+
+.actions ul{
+	position: absolute;
+	right:  0px;
+}
+
+.actions li{
+	position: absolute;
+	padding: 20px 0;
+	display: block;
+	left: 19em;
+}
+
+.button{
+	color: white;
+	background-color: #ff8c00;
+	border-radius: 30px;
+	width: 100px;
+	height: 3.75em;
+	border-color: white;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
+	background:rgba(0,0,0,0.2)/* #6cc091*/;
+	border-radius: 10px;
+	border: none;
+	/*border: solid 2px #fff;*/
+	color: #fff;
+	background-color: white;
+	display: block;
+	outline: 0;
+	padding: 0 1sem;
+	text-decoration: none;
+	/*width: 100%;*//*影響我的search bar 的長度，所以我關了*/
+}
+
+input[type="text"]:invalid,
+input[type="password"]:invalid,
+input[type="email"]:invalid,
+input[type="tel"]:invalid,
+select:invalid,
+textarea:invalid {
+	box-shadow: none;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+select:focus,
+textarea:focus {
+	border-color: #4bae77;
+	box-shadow: 0 0 0 1px #4bae77;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+select {
+	height: 2.75em;
+}
+
+textarea {
+	/*padding: 0.75em 1em;*/
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
+	display: block;
+	float: left;
+	margin-right: -2em;
+	opacity: 0;
+	width: 1em;
+	z-index: -1;
+}
+
+input[type="checkbox"] + label,
+input[type="radio"] + label {
+	text-decoration: none;
+	color: #9a9a9a;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 1em;
+	font-weight: 400;
+	padding-left: 2.4em;
+	padding-right: 0.75em;
+	position: relative;
+}
+
+input[type="checkbox"] + label:before,
+input[type="radio"] + label:before {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	font-family: FontAwesome;
+	font-style: normal;
+	font-weight: normal;
+	text-transform: none !important;
+}
+
+input[type="checkbox"] + label:before,
+input[type="radio"] + label:before {
+	background: rgba(144, 144, 144, 0.075);
+	border-radius: 0;
+	border: solid 1px #8dcca9;
+	content: '';
+	display: inline-block;
+	height: 1.65em;
+	left: 0;
+	line-height: 1.58125em;
+	position: absolute;
+	text-align: center;
+	top: 0;
+	width: 1.65em;
+}
+
+input[type="checkbox"]:checked + label:before,
+input[type="radio"]:checked + label:before {
+	background: #6cc091;
+	border-color: #6cc091;
+	color: #ffffff;
+	content: '\f00c';
+}
+
+input[type="checkbox"]:focus + label:before,
+input[type="radio"]:focus + label:before {
+	border-color: #6cc091;
+	box-shadow: 0 0 0 1px #6cc091;
+}
+
+input[type="checkbox"] + label:before {
+	border-radius: 0;
+}
+
+input[type="radio"] + label:before {
+	border-radius: 100%;
+}
+
+::-webkit-input-placeholder {
+	color: #c4e5d3 !important;
+	opacity: 1.0;
+}
+
+:-moz-placeholder {
+	color: #c4e5d3 !important;
+	opacity: 1.0;
+}
+
+::-moz-placeholder {
+	color: #c4e5d3 !important;
+	opacity: 1.0;
+}
+
+:-ms-input-placeholder {
+	color: #c4e5d3 !important;
+	opacity: 1.0;
+}
+
 /*字體設定*/
 .small-font{
 	font-size: small;
@@ -263,9 +618,34 @@ nav a{
 .pic-frame-100vw img{
 	width: 100%;
 	max-width: 100%;
+	min-width: 780px;
 }
 
 .pic-frame-fullframe img{
 	height: 500px;
 
+}
+
+.gototop{
+	position: fixed;
+	width: 50px;
+	height: 50px;
+	background-color: #0f0d7d;
+	bottom: 40px;
+	right: 50px;
+	border-radius: 30px;
+	border: 3px;
+	border-color: white;
+	text-align: center;
+}
+
+.gototop i{
+	text-align: center;
+	margin: auto;
+	color: white;
+}
+
+.gototop a{
+	color: white;
+	text-decoration: none;
 }
