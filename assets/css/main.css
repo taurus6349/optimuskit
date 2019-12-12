@@ -99,6 +99,10 @@ nav{
 	z-index: 1;
 }
 
+#pages-nav a {/*支頁的導覽列的底線消除*/
+	text-decoration: none;
+}
+
 nav ul{
 	display: flex;
 	justify-content: space-between;
@@ -139,6 +143,7 @@ nav a{
 	top: 10px;
 	font-size: 20pt;
 	z-index: 1;
+	color: rgb(220 220 220);/*淺灰色的放大鏡icon*/
 }
 
 .nav-page{
@@ -228,15 +233,16 @@ nav a{
 
 }
 
+/*滑鼠指向菜單，下拉選單（三列隱藏選單）*/
 .dropbtn-2:hover .dropdown-content li{
 	display: block;
 }
 
-.dropbtn-3:hover .dropdown-content-3 li{
+.dropbtn-2:hover .dropdown-content-3 li{
 	display: block;
 }
 
-.dropbtn-4:hover .dropdown-content-4 li{
+.dropbtn-2:hover .dropdown-content-4 li{
 	display: block;
 }
 
@@ -494,6 +500,13 @@ textarea {
 	/*width: 100%;*//*影響我的search bar 的長度，所以我關了*/
 }
 
+/*個別input*/
+.nav-searchbar >input[type="text"],
+textarea [type="search"]{
+	border-radius: 30px;
+	padding-left: 20px;/*調整行內文字的位置，我要向右移動避免靠邊*/
+}
+
 input[type="text"]:invalid,
 input[type="password"]:invalid,
 input[type="email"]:invalid,
@@ -653,6 +666,8 @@ input[type="radio"] + label:before {
 	text-align: center;
 	margin: auto;
 	color: white;
+	font-size: 30px;
+	padding-top: 10px;
 }
 
 .gototop a{
