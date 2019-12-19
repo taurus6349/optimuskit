@@ -758,29 +758,6 @@ textarea [type="rightserch"]{
 
 }
 
-#contact-us
-/*input[type="text"]
-input[type="email"],*/
-textarea[type="text"]{
-	-moz-appearance: none;
-	-webkit-appearance: none;
-	-ms-appearance: none;
-	appearance: none;
-	background:green/* #6cc091*/;
-	border: none;
-	line-height: 30px;
-	border: solid 2px #fff;
-	border-color: grey;
-	color: #fff;
-	background-color: white;
-	display: block;
-	outline: 0;
-	padding: 0 8sem;
-
-}
-
-
-
 input[type="text"]:invalid,
 input[type="password"]:invalid,
 input[type="email"]:invalid,
